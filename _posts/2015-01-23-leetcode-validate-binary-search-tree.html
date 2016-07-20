@@ -1,0 +1,73 @@
+---
+layout: post
+status: publish
+published: true
+title: "[LeetCode] Validate Binary Search Tree 解题报告"
+author:
+  display_name: ChongTang
+  login: ChongTang
+  email: tangcho@gmail.com
+  url: http://www.chongtang.me/
+author_login: ChongTang
+author_email: tangcho@gmail.com
+author_url: http://www.chongtang.me/
+wordpress_id: 2116
+wordpress_url: http://blog.chongtang.me/?p=2116
+date: '2015-01-23 16:27:55 -0500'
+date_gmt: '2015-01-23 21:27:55 -0500'
+categories:
+- Algorithm
+tags:
+- leetcode
+- BST
+- inorder
+comments: []
+---
+<p><strong>Question：</strong></p>
+<p>Given a binary tree, determine if it is a valid binary search tree (BST).</p>
+<p>Assume a BST is defined as follows:</p>
+<ul>
+<li>The left subtree of a node contains only nodes with keys <b>less than</b> the node's key.</li>
+<li>The right subtree of a node contains only nodes with keys <b>greater than</b> the node's key.</li>
+<li>Both the left and right subtrees must also be binary search trees.</li><br />
+</ul>
+<strong>Thoughts:</strong></p>
+<p>1. Wrong: The first solution come to my mind is the one of Integer.MIN_VALUE and Integer.MAX_VALUE. You can Google it and you will get more details. Here is the code that I come up with at the first time. But it's not accepted due to LeetCode added more test cases. Most of the added test cases are edge cases, like Integer.MIN_VALUE and Integer.MAX_VALUE.</p>
+<p>2. The right solution should be Inorder scan the tree, and add each value into a list. If the tree is a binary search tree, the list should be sorted at last. The space complexity is O(n) though.</p>
+<p><strong>Solution:</strong></p>
+<p><strong><em><del>Wrong one:</del></em></strong></p>
+{% highlight java %}
+public class Solution {
+    public boolean isValidBST(TreeNode root) {
+        return isValidBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+    public boolean isValidBST(TreeNode node, int low, int high){
+        if(node == null) return true;
+        return low < node.val && node.val < high &&
+            isValidBST(node.left, low, node.val) &&
+            isValidBST(node.right, node.val, high);
+    }
+}
+{% endhighlight %}
+<strong>Correct one:</strong></p>
+{% highlight java %}
+public class Solution {
+    public boolean isValidBST(TreeNode root) {
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        inorder(root, list);
+        int size = list.size();
+        for(int i=0; i<size-1; i++){ // check if the array is sorted
+            if(list.get(i) >= list.get(i+1)){
+                return false;
+            }
+        }
+        return true;
+    }
+    public void inorder(TreeNode node, LinkedList<Integer> list){
+        if(node == null) return;
+        if(node.left != null) inorder(node.left, list);
+        list.add(node.val);
+        if(node.right != null) inorder(node.right, list);
+    }
+}
+{% endhighlight %}

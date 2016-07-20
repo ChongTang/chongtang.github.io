@@ -1,0 +1,57 @@
+---
+layout: post
+title: "[LeetCode] Symmetric Tree 解题报告"
+categories:
+- Algorithm
+tags:
+- leetcode
+- tree
+---
+<h3>Question:</h3>
+Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
+For example, this binary tree is symmetric:
+<pre>
+    1
+   / \
+  2   2
+ / \ / \
+3  4 4  3
+</pre>
+
+But the following is not:
+
+<pre>
+    1
+   / \
+  2   2
+   \   \
+    3   3
+</pre>
+
+<h3>Thoughts:</h3>
+这里用递归方式解题. 判断树是否对称的条件：
+<ol>
+  <li>如果root是null，返回true.</li>
+  <li>root的左子树等于root的右子树.</li>
+  <li>左子树的左子树等于右子树的右子树，左子树的右子树等于右子树的左子树.</li>
+</ol>
+
+<h3>Java Code:</h3>
+{% highlight java %}
+public class Solution {
+    public boolean isSymmetric(TreeNode root) {
+        if(root == null) return true;
+        return isSym(root.left, root.right);
+    }
+    public boolean isSym(TreeNode l, TreeNode r){
+        if(l==null && r==null) return true;
+        // one of them is null, the other one is not
+        // notice the XOR here
+        if(l==null ^ r==null) return false;
+        if(l.val == r.val) {
+            return isSym(l.left, r.right) && isSym(l.right, r.left);
+        }
+        return false;
+    }
+}
+{% endhighlight %}

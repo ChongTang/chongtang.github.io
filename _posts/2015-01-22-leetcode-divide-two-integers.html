@@ -1,0 +1,63 @@
+---
+layout: post
+status: publish
+published: true
+title: "[LeetCode] Divide Two Integers 解题报告"
+author:
+  display_name: ChongTang
+  login: ChongTang
+  email: tangcho@gmail.com
+  url: http://www.chongtang.me/
+author_login: ChongTang
+author_email: tangcho@gmail.com
+author_url: http://www.chongtang.me/
+wordpress_id: 2111
+wordpress_url: http://blog.chongtang.me/?p=2111
+date: '2015-01-22 12:50:48 -0500'
+date_gmt: '2015-01-22 17:50:48 -0500'
+categories:
+- Algorithm
+tags:
+- algorithm
+- leetcode
+- math
+comments: []
+---
+<p><strong>Question:</strong><br />
+Divide two integers without using multiplication, division and mod operator.<br />
+If it is overflow, return MAX_INT.</p>
+<p><strong>Thoughts:</strong><br />
+1. In order to check overflow, we convert integer to long first.<br />
+2. Use XOR to check negative.<br />
+3. return Integer.MAX_VALUE if overflow</p>
+<p><strong>Java Code:</strong></p>
+{% highlight java %}
+public class Solution {
+    public int divide(int dividend, int divisor) {
+        if(divisor == 0) return Integer.MAX_VALUE;
+        long divid_long = (long)dividend;
+        long divis_long = (long)divisor;
+        long divid = Math.abs(divid_long);
+        long divis = Math.abs(divis_long);
+        int answer = 0;
+        while(divis <= divid){
+            int digital = 0;
+            while(divid >= (divis << digital)){
+                digital++;
+            }
+            answer += 1<<(digital-1);
+            divid -= divis << (digital-1);
+        }
+        if((divid_long<0) ^ (divis_long<0)){ // check negative with XOR
+            return -answer;
+        }
+        // if the answer is negative, it should be returned by last "return" already.
+        // so the answer here should be positive
+        // check overflow here, if the answer here is -2147483648 (Integer.MIN_VALUE), we should return Integer.MAX_VALUE
+        if(answer == Integer.MIN_VALUE){
+            return Integer.MAX_VALUE;
+        }
+        return answer;
+    }
+}
+{% endhighlight %}

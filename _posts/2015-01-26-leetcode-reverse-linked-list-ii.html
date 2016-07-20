@@ -1,0 +1,51 @@
+---
+layout: post
+title: "[LeetCode] Reverse Linked List II 解题报告"
+categories:
+- Algorithm
+tags:
+- leetcode
+- list
+comments: []
+---
+<p><strong>Question:</strong><br />
+Reverse a linked list from position m to n. Do it in-place and in one-pass.</p>
+<p>For example:<br />
+Given 1->2->3->4->5->NULL, m = 2 and n = 4,</p>
+<p>return 1->4->3->2->5->NULL.</p>
+<p>Note:<br />
+Given m, n satisfy the following condition:<br />
+1 &le; m &le; n &le; length of list.</p>
+<p><strong>Thoughts:</strong><br />
+1. new a dummy head to hand the head node, this will save a lots of work.<br />
+2. We can use three pointers here to reverse, say pre, cur, and pos. pre will point to the previous node of cur node. cur node is the first node that will be reversed. pos node is cur.next.<br />
+3. We first scan pre node by --m, and make cur = pre.next, and pos = cur.next.<br />
+4. Save pos.next as tmpPos, and change pos.next back to cur, change cur = pos, and then make pos = tmpPos.<br />
+Notes: This question is hard, and there are many edge case need to consider. I cannot write bug free code in 15 minutes. Good luck to you!<br />
+I will post a picture to show the all process soon later.</p>
+<p><strong>Code:</strong></p>
+{% highlight java %}
+public class Solution {
+    public ListNode reverseBetween(ListNode head, int m, int n) {
+        if(head == null || m == n) return head;
+        ListNode dummyHead = new ListNode(Integer.MIN_VALUE);
+        dummyHead.next = head;
+        ListNode pre = dummyHead;
+        int len = n-m;
+        while(--m > 0){
+            pre = pre.next;
+        }
+        ListNode cur = pre.next;
+        ListNode pos = cur.next;
+        while(len-- > 0 && pos != null){
+            ListNode tmpPos = pos.next;
+            pos.next = cur;
+            cur = pos;
+            pos = tmpPos;
+        }
+        pre.next.next = pos;
+        pre.next = cur;
+        return dummyHead.next;
+    }
+}
+{% endhighlight %}
