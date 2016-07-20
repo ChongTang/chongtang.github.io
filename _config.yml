@@ -19,8 +19,8 @@ twitter: chongtanguva
 linkedin: chongtang
 stackoverflow: users/1895314/chong-tang #e.g: users/2735833/proton1h1
 #Comment out if you don't want disqus 
-disqus: 
-google_analytics: 
+disqus: chongtangblog
+google_analytics: UA-65355864-1
 
 
 # needed for travis-ci build
