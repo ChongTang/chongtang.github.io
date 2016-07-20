@@ -8,7 +8,7 @@ safe: true
 
 # edit here to achieve your personal greatness
 url: http://blog.ctang.me
-baseurl: /
+baseurl: 
 title: Chong Tang
 author: Chong Tang
 description: Personal homepage and blog
