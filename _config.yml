@@ -1,5 +1,5 @@
 # top level stuff you probably don't need to touch
-permalink: /:title.html
+permalink: /:categories/:title.html
 paginate: 5
 gems: [jekyll-paginate]
 port: 3000
@@ -7,8 +7,8 @@ safe: true
 
 
 # edit here to achieve your personal greatness
-url: http://blog.ctang.me
-baseurl: 
+url: http://www.ctang.me
+baseurl:
 title: Chong Tang
 author: Chong Tang
 description: Personal homepage and blog
@@ -18,7 +18,7 @@ github: chongtang # username
 twitter: chongtanguva
 linkedin: chongtang
 stackoverflow: users/1895314/chong-tang #e.g: users/2735833/proton1h1
-#Comment out if you don't want disqus 
+#Comment out if you don't want disqus
 disqus: chongtang
 google_analytics: UA-65355864-1
 
