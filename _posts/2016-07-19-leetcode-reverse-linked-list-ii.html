@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[LeetCode] Reverse Linked List II 解题报告"
+title: "[LeetCode] Reverse Linked List II"
 categories: leetcode
 tags:
 - leetcode
@@ -21,7 +21,8 @@ Given m, n satisfy the following condition:<br />
 4. Save pos.next as tmpPos, and change pos.next back to cur, change cur = pos, and then make pos = tmpPos.<br />
 Notes: This question is hard, and there are many edge case need to consider. I cannot write bug free code in 15 minutes. Good luck to you!<br />
 I will post a picture to show the all process soon later.</p>
-<p><strong>Code:</strong></p>
+
+<h3>Solution:</h3>
 {% highlight java %}
 public class Solution {
     public ListNode reverseBetween(ListNode head, int m, int n) {

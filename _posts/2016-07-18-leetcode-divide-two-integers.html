@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[LeetCode] Divide Two Integers 解题报告"
+title: "[LeetCode] Divide Two Integers"
 categories: leetcode
 tags:
 - algorithm
@@ -14,7 +14,8 @@ If it is overflow, return MAX_INT.</p>
 1. In order to check overflow, we convert integer to long first.<br />
 2. Use XOR to check negative.<br />
 3. return Integer.MAX_VALUE if overflow</p>
-<p><strong>Java Code:</strong></p>
+
+<h3>Solution:</h3>
 {% highlight java %}
 public class Solution {
     public int divide(int dividend, int divisor) {
