@@ -19,6 +19,9 @@ For example, if there are 4 stones in the heap, then you will never win the game
 
 1. If there are 5 stones in the heap, could you figure out a way to remove the stones such that you will always be the winner?
 
+**Thoughts:**
+
+According to the hint, there is no way to win if there are 4 stones. However, you can win if there are 5, 6, or 7 stones. You cannot if there are 8 stone, since this case is just like 4 stones case. As you can see, if the initial number of stones are multiplier of 4, there will be no way for you to win. That is to say, if ```n % 4 == 0```, you will lose for sure.
 
 **Solution:**
 
