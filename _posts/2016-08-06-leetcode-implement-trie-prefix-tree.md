@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "[LeetCode] Implement Trie (Prefix Tree)"
@@ -7,11 +6,11 @@ tags:
 - leetcode
 - tree
 ---
-## Question
+**Question**
 
 Implement a trie with _insert_, _search_, and _startsWith_ methods.
 
-## Solution
+**Solution**
 
 {% highlight python %}
 class TrieNode(object):
