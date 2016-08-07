@@ -6,11 +6,12 @@ tags:
 - leetcode
 - tree
 ---
-**Question**
+
+**Question:**
 
 Implement a trie with _insert_, _search_, and _startsWith_ methods.
 
-**Solution**
+**Solution:**
 
 {% highlight python %}
 class TrieNode(object):
@@ -23,10 +24,9 @@ class TrieNode(object):
         
 
 class Trie(object):
-
     def __init__(self):
         self.root = TrieNode()
-
+        
     def insert(self, word):
         """
         Inserts a word into the trie.
@@ -42,8 +42,6 @@ class Trie(object):
             node = child
         node.isWord = True
         
-        
-
     def search(self, word):
         """
         Returns if the word is in the trie.
@@ -57,9 +55,7 @@ class Trie(object):
                 return False
             node = child
         return node.isWord
-                
         
-
     def startsWith(self, prefix):
         """
         Returns if there is any word in the trie
