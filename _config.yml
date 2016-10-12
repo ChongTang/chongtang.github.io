@@ -9,9 +9,9 @@ safe: true
 # edit here to achieve your personal greatness
 url: http://www.ctang.me
 baseurl:
-title: Chong Tang
+title: Chong Tang - Computer Science at UVA - University of Virginia
 author: Chong Tang
-description: Chong Tang homepage and blog
+description: Chong Tang Homepage
 avatar: profile.png
 email: ctang@virginia.edu
 github: chongtang # username
