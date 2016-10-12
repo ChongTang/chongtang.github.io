@@ -3,19 +3,34 @@ layout: home
 ---
 
 <section id="about">
-	<div class="container">
-	  <div class="avatar">
-			<img class="img-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="My Avatar">
-			<h3><strong>Chong Tang</strong></h3>
-			<h5>Ph.D Candidate</h5>
-			<h5>Department of Computer Science</h5>
-			<h5>University of Virginia</h5>
+	<div class="jumbotron row"
+	        style="padding-bottom: 10px; padding-top: 10px; padding-left: 20px; margin-bottom: 10px;">
+	  <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+	          <img src="{{ site.baseurl }}static/img/{{ site.avatar }}" class="img-responsive img-rounded" alt="Chong Tang">
 	  </div>
-	  <h3 align="center">I am a Ph.D. student in the Department of Computer Science at the University of Virginia, working with Professor Kevin Sullivan and Baishakhi Ray.</h3>
-	  <h3 align="center">I work on various topics in Software Engineering, like Tradespace Analysis and Data Driven Software Analyis.</h3>
-	  <h3 align="center">Have a look at some of my working <a href="{{ site.baseurl }}projects.html">projects</a>, and my <a href="{{ site.baseurl }}publications.html">publications</a>.</h3>
-	  <h3 align="center">For more information, check out my <a href="http://www.ctang.me/attachment/chongtang_cv.pdf">Resume</a>.</h3>
-	  <h3 align="center">Email me: <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</h3>
+	  <div class="col-sm-7" style="margin-top: -16px">
+	          <h3>Chong Tang</h3>
+	          <h5>Ph.D. Candidate</h5>
+	          <h5>Department of Computer Science</h5>
+	          <h5>University of Virginia</h5>
+	          <h5><span class="glyphicon glyphicon-envelope"></span> ctang@virginia.edu</h5>
+	  </div>
+	  <div class="col-sm-3">
+			<p><strong>Get In Touch</strong></p>
+	    <a href="http://stackoverflow.com/users/1895314/chong-tang">
+	            <img src="http://stackoverflow.com/users/flair/1895314.png" width="180" alt="profile for Chong Tang at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Chong Tang at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+	    </a><p/>
+	    <a href="https://www.linkedin.com/pub/chong-tang/20/99/55b">
+	            <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_120x33.png" width="80"  border="0" alt="View Chong Tang's profile on LinkedIn">
+	    </a><br />
+	    <a href="https://github.com/ChongTang"><img src="img/GitHub_Logo.png" width="80"/></a>
+	  </div>
+	</div>
+	<div class="row">
+		<p>I am a Ph.D. student in the Department of Computer Science at the University of Virginia, working with Professor Kevin Sullivan and Baishakhi Ray.</p>
+		<p>I work on various topics in Software Engineering, like Tradespace Analysis and Data Driven Software Analyis.</p>
+		<p>Have a look at some of my working <a href="{{ site.baseurl }}projects.html">projects</a>, and my <a href="{{ site.baseurl }}publications.html">publications</a>.</p>
+		<p>For more information, check out my <a href="http://www.ctang.me/attachment/chongtang_cv.pdf">Resume</a>.</p>
 	  {% include social.html %}
 	</div>
 </section>
