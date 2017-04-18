@@ -1,0 +1,27 @@
+# top level stuff you probably don't need to touch
+permalink: /:categories/:title.html
+paginate: 5
+gems: [jekyll-sitemap, jekyll-paginate]
+port: 3000
+safe: true
+
+
+# edit here to achieve your personal greatness
+url: http://www.ctang.me
+baseurl:
+title: Chong Tang - Computer Science at UVA - University of Virginia
+author: Chong Tang
+description: Chong Tang Homepage
+avatar: profile.png
+email: ctang@virginia.edu
+github: chongtang # username
+twitter: ChongTangCS
+linkedin: chongtang
+stackoverflow: users/1895314/chong-tang #e.g: users/2735833/proton1h1
+#Comment out if you don't want disqus
+disqus: chongtang
+google_analytics: UA-65355864-1
+
+
+# needed for travis-ci build
+exclude: [vendor]
