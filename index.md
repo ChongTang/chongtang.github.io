@@ -29,7 +29,7 @@ For more information, check out my [resume](attachment/chong_tang_resume.pdf) or
   ICSE 2017 Companion. Buenos Aires, Argentina, May 20-28, 2017
 * Hamid Bagheri, <strong>Chong Tang</strong>, Kevin Sullivan<br/>
   [Automated Synthesis and Dynamic Analysis of Tradeoff Spaces for Object-Relational Mapping](http://ieeexplore.ieee.org/abstract/document/7506009/)<br/>
-  IEEE Transactions on Software Engineering (TSE), Volume 43 Issue 2, February 2017)
+  IEEE Transactions on Software Engineering (TSE), Volume 43 Issue 2, February 2017
 * Ke Dou, Xi Wang, <strong>Chong Tang</strong>, Adam Ross, Kevin Sullivan<br/>
   [An Evolutionary Theory-Systems Approach to a Science of the Ilities](attachment/papers/illities-2015.pdf)<br/>
   2015 Conference on Systems Engineering Reseach<br/>
