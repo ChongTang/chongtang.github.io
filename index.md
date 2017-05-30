@@ -23,7 +23,10 @@ For more information, check out my [resume](attachment/chong_tang_resume.pdf) or
 
 ## Publications
 ### Software Engineering
-
+* Chong Tang, Hamid Bagheri, Sarun Paisarnsrisomsuk, Kevin Sullivan<br/>
+  [Towards Designing Effective Data Persistence through Tradeoff Space Analysis](http://dl.acm.org/citation.cfm?id=3098465)<br/>
+  39th International Conference on Software Engineering<br/>
+  ICSE 2017 Companion. Buenos Aires, Argentina, May 20-28, 2017
 * Hamid Bagheri, <strong>Chong Tang</strong>, Kevin Sullivan<br/>
   [Automated Synthesis and Dynamic Analysis of Tradeoff Spaces for Object-Relational Mapping](http://ieeexplore.ieee.org/abstract/document/7506009/)<br/>
   IEEE Transactions on Software Engineering (TSE)
