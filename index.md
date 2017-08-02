@@ -24,7 +24,7 @@ For more information, check out my [resume](attachment/chong_tang_resume.pdf) or
 ## Publications
 ### Software Engineering
 * <strong>Chong Tang</strong><br/>
-  System Performance Optimization via Design and Configuration Space Exploration<br/>
+  [System Performance Optimization via Design and Configuration Space Exploration](attachment/papers/fse2017_ds.pdf)<br/>
   FSE 2017 Doctoral Symposium, Paderborn, Germany, September 04–08, 2017. To appear.
 * <strong>Chong Tang</strong>, Hamid Bagheri, Sarun Paisarnsrisomsuk, Kevin Sullivan<br/>
   [Towards Designing Effective Data Persistence through Tradeoff Space Analysis](http://dl.acm.org/citation.cfm?id=3098465)<br/>
