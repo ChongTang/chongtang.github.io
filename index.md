@@ -4,12 +4,10 @@ layout: default
 <img style="float: left; margin-right: 40px; height: 180px" src="img/profile.png">
 <br/>
 <br/>
-<strong>Ph.D. Candidate<br/>
-Computer Science<br/>
-University of Virginia<br/>
-<span class="glyphicon glyphicon-envelope"></span> ctang@virginia.edu<br/></strong>
+<strong>Senior Software Engineer<br/>
+Walmart Labs<br/>
 <br/>
-I am a Ph.D. candidate in the Department of Computer Science at the University of Virginia. I work with Professor Kevin Sullivan and Professor Baishakhi Ray. I work on various topics in Software Engineering, like Software Synthesis, Tradeoff Analysis, and System Performance Optimization.
+I got my Ph.D. degree in Computer Science at the University of Virginia. I worked with Professor Kevin Sullivan and Professor Baishakhi Ray on various topics in Software Engineering, like Software Synthesis, Tradeoff Analysis, and System Performance Optimization.
 <br/><br/>
 For more information, check out my [resume](attachment/chong_tang_resume.pdf) or [CV](attachment/chong_tang_cv.pdf).
 
