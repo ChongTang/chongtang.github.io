@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<img style="float: left; margin-right: 40px; height: 180px" src="img/profile.png">
+<img style="float: left; margin-right: 40px; height: 180px" src="img/profile.jpg">
 <br/>
 <br/>
 <strong>Senior Software Engineer<br/>
