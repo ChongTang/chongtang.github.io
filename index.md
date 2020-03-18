@@ -5,7 +5,7 @@ layout: default
 <br/>
 <br/>
 <strong>Senior Software Engineer<br/>
-Walmart Labs<br/>
+Walmart Labs</strong><br/>
 <br/>
 I got my Ph.D. degree in Computer Science at the University of Virginia. I worked with Professor Kevin Sullivan and Professor Baishakhi Ray on various topics in Software Engineering, like Software Synthesis, Tradeoff Analysis, and System Performance Optimization.
 <br/><br/>
@@ -68,4 +68,3 @@ For more information, check out my [resume](attachment/chong_tang_resume.pdf) or
 * Hanyu Liu, <strong>Chong Tang</strong>, Shaoen Wu, Honggang Wang<br/>
   [Real-time Video Surveillance for Large Scenes](attachment/papers/stitch.pdf)<br/>
   Invited paper. WCSP 2011- Invited Session on Multimedia Communication Technology - Nanjing, China, Sept. 2011
-
