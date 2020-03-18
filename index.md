@@ -4,8 +4,8 @@ layout: default
 <img style="float: left; margin-right: 40px; height: 180px" src="img/profile.jpg">
 <br/>
 <br/>
-<strong>Senior Software Engineer<br/>
-Walmart Labs</strong><br/>
+<strong>Senior Software Engineer</strong><br/>
+<strong>Walmart Labs</strong><br/>
 <br/>
 I got my Ph.D. degree in Computer Science at the University of Virginia. I worked with Professor Kevin Sullivan and Professor Baishakhi Ray on various topics in Software Engineering, like Software Synthesis, Tradeoff Analysis, and System Performance Optimization.
 <br/><br/>
