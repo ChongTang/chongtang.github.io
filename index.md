@@ -5,8 +5,12 @@ layout: default
 <br/>
 <br/>
 <strong>Senior Software Engineer</strong><br/>
-<strong>Walmart Labs</strong><br/>
-<br/>
+<strong>Microsoft</strong><br/>
+<br/><br/>
+I am a Senior Software Engineer at Microsoft. We build the language understanding service called <a href="https://www.luis.ai" target="_blank">LUIS AI</a> to help inexperienced customers build conversational AI and document understanding models.
+<br/><br/>
+I also worked in the Online Grocery Shopping team at Walmart Labs, where I helped solve various search-related problems like query suggestion and customer intents understanding.
+<br/><br/>
 I got my Ph.D. degree in Computer Science at the University of Virginia. I worked with Professor Kevin Sullivan and Professor Baishakhi Ray on various topics in Software Engineering, like Software Synthesis, Tradeoff Analysis, and System Performance Optimization.
 <br/><br/>
 For more information, check out my [resume](attachment/chong_tang_resume.pdf) or [CV](attachment/chong_tang_cv.pdf).
