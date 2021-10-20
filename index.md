@@ -4,7 +4,7 @@ layout: default
 <img style="float: left; margin-right: 40px; height: 180px" src="img/profile.jpg">
 <br/>
 <br/>
-<strong>Senior Software Engineer</strong><br/>
+<strong>Senior Software Engineer in AI/NLP</strong><br/>
 <strong>Microsoft</strong><br/>
 <br/><br/>
 I am a Senior Software Engineer at Microsoft. We build the language understanding service called <a href="https://www.luis.ai" target="_blank">LUIS AI</a> to help inexperienced customers build conversational AI and document understanding models.
@@ -15,6 +15,7 @@ I got my Ph.D. degree in Computer Science at the University of Virginia. I worke
 <br/><br/>
 For more information, check out my [resume](attachment/chong_tang_resume.pdf) or [CV](attachment/chong_tang_cv.pdf).
 
+<!--
 <table>
   <tr>
     <td><a href="http://stackoverflow.com/users/1895314/chong-tang" target="_blank"><img src="http://stackoverflow.com/users/flair/1895314.png" width="150"/></a></td>
@@ -22,6 +23,7 @@ For more information, check out my [resume](attachment/chong_tang_resume.pdf) or
     <td><a href="https://github.com/ChongTang" target="_blank"><img src="img/github.png" width="150"/></a></td>
   </tr>
 </table>
+-->
 
 ## Publications
 ### Software Engineering
